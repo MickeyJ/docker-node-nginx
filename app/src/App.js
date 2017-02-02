@@ -47,7 +47,7 @@ export default class App extends Component{
     return (
       <div>
 
-        <h1>Woah... Docker is COOL</h1>
+        <h1>Woah... Docker is POOP</h1>
 
         <hr/>
 
