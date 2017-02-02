@@ -4,7 +4,7 @@
   "description": "",
   "main": "./bin/www",
   "scripts": {
-    "dev": "nodemon ./bin/www",
+    "dev": "nodemon -L ./bin/www",
     "start": "node ./bin/www"
   },
   "keywords": [],
