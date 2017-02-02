@@ -1,0 +1,38 @@
+app:
+  build: ./app
+  volumes:
+    - "./app:/home/devuser/app"
+  ports:
+    - "3030:3000"
+  environment:
+    - NODE_ENV=development
+  command: npm start
+#  environment:
+#      - NODE_ENV=production
+#  command: npm run build
+
+server:
+  build: ./server
+  volumes:
+    - "./server:/home/devuser/server"
+  ports:
+    - "9090:9000"
+  environment:
+    - NODE_ENV=development
+  command: npm run dev
+#  environment:
+#      - NODE_ENV=production
+#  command: npm start
+
+nginx:
+  restart: always
+  build: ./nginx/
+  ports:
+    - "80:80"
+  volumes:
+    - /www/public
+  volumes_from:
+    - app
+  links:
+    - server
+    - app:app
