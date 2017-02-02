@@ -1,8 +1,8 @@
 FROM node:boron
 
-RUN mkdir -p /home/devuser/app
+RUN mkdir -p /home/devuser/api
 
-WORKDIR /home/devuser/app
+WORKDIR /home/devuser/api
 
 ADD package.json package.json
 

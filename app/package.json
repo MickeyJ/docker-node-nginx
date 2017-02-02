@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "webpack -p && node bin/www",
+    "build": "rm -r public/*.js && webpack -p && node bin/www",
     "start": "node bin/www"
   },
   "dependencies": {

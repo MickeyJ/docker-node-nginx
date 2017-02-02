@@ -26,7 +26,7 @@ $ docker-compose up -d
 
  - running nginx at [localhost:80](http://localhost)
  - running app at [localhost:3030](http://localhost:3030)
- - running server at [localhost:9090](http://localhost:9090)
+ - running api at [localhost:9090](http://localhost:9090)
 
 -----------------
 
